@@ -1,0 +1,359 @@
+.s-hero {
+    margin-top: 13rem;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .info {
+            width: 100%;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                max-width: 62.5rem;
+                margin-top: 2.5rem;
+            }
+        }
+    }
+
+    @media(max-width: 1200px) {
+        .container {
+            flex-direction: column;
+            img {
+                margin-bottom: 2rem;
+            }
+
+           img {
+            width: 65rem;
+           }
+        }
+    }
+    @media(max-width: 600px) {
+        .container {
+            img {
+                width: 80%;
+            }
+        }
+    }
+    @media(max-width: 480px) {}
+}
+
+.s-cards {
+    margin-top: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+
+    .card {
+        position: relative;
+        width: 35.4rem;
+        height: 31rem;
+        padding: 3rem 3.8rem;
+        background-color: $grey-200;
+
+        .logo {
+            margin: 0 auto 2rem;
+        }
+        .text {
+            text-align: center;
+        }
+        .btn {
+            position: absolute;
+            right: 3rem;
+            bottom: 3rem;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 2.25rem;
+            letter-spacing: 0.147rem;
+            text-transform: uppercase;
+
+            &.adm {
+                color: $administrativo;
+            }
+            &.documentacao {
+                color: $documentacao;
+            }
+            &.solucoes {
+                color: $solucoes;
+            }
+            &.eventos {
+                color: $eventos;
+            }
+            &.gerenciamento {
+                color: $gerenciamento;
+            }
+        }
+    }
+    .modal {
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+
+        opacity: 0;
+        pointer-events: none;
+
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 0;
+        }
+
+        .box {
+            position: relative;
+            z-index: 2;
+            width: 92rem;
+            padding: 4rem 9.4rem;
+            background-color: $grey-100;
+
+            .close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-weight: 700;
+                color: $white-100;
+                padding: 1.5rem 2.5rem;
+            }
+
+            .logo {
+                margin: 0 auto 3rem;
+            }
+
+            p {
+              &:not(:last-child) {
+                margin-bottom: 2.2rem;
+              }  
+            }
+            h2 {
+                font-size: 1.8rem;
+                margin-top: 4rem;
+                &.formacao {
+                    color: $solucoes;
+                }
+                &.apoio {
+                    color: $administrativo;
+                }
+                &.gestao {
+                    color: $documentacao;
+                }
+                &.poder-publico {
+                    color: $gerenciamento;
+                }
+            }
+
+            ul {
+                margin-top: 2rem;
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: $white-100;
+                    font-size: 1.6rem;
+                    &:not(:first-child) {
+                        margin-top: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 580px) {
+            height: auto;
+        }
+    }
+
+    @media(max-width: 1200px) {
+       flex-wrap: wrap;
+       .card {
+        margin-bottom: 20px;
+       }
+    }
+
+    @media(max-width: 991px) {
+        margin-top: 5rem;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    @media(max-width: 600px) {}
+
+    @media(max-width: 480px) {}
+}
+
+
+.s-event {
+    margin-top: 6rem;
+    .container {
+        background-color: $white-100;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 11rem;
+        padding: 4.8rem 9.4rem;
+
+        .details {
+            .info {
+                p {
+                    font-size: 1.4rem;
+                    color: $black-200;
+                }
+                h2 {          
+                    color: $black-100;
+                    text-transform: uppercase;
+                }
+                h3 {
+                    color: $grey-100;
+                }
+            }
+        }
+
+        .qr-code {
+            p {
+                margin-top: 5px;
+                width: 13rem;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                color: $black-100;
+                text-align: center;
+                a {
+                    font-weight: 700;
+                    color: $black-100;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 991px) {
+        .container {
+            flex-direction: column;
+            gap: 5rem;
+                .qr-code {
+                    align-items: center;
+                    p {
+                        width: 15rem;
+                    }
+                }
+           
+        }
+    }
+}
+
+.s-contact {
+    margin-top: 6rem;
+    .container {
+        .title {
+            margin-bottom: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        form {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .field {
+                width: 43.3rem;
+                margin-bottom: 2rem;
+                label {
+                    display: block;
+                    margin-bottom: 0.5rem;
+
+                    font-size: 1.8rem;
+                    line-height: 2.7rem;
+                    color: $white-100;
+
+                    .accent {
+                        color:  $ascent;
+                    }
+                }
+                input {
+                    width: 100%;
+                    max-width: 43.3rem;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid $white-200;
+                    font-size: 1.2rem;
+                    line-height: 1.8rem;
+                    padding-bottom: 0.5rem;
+                }
+                textarea {
+                    background-color: transparent;
+                    border: 0;
+                    width: 100%;
+                    max-width: 43.3rem;
+                    border-bottom: 1px solid $white-200;
+                    padding-bottom: 0.5rem;
+                }
+            }
+            .form-btn {
+                width: 100%;
+                max-width: 43.3rem;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                text-transform: uppercase;
+                background-color: $ascent;
+                border: none;
+                outline: none;
+                padding: 1rem 0;       
+            }
+        }
+    }
+
+    @media(max-width: 991px) {
+        .container {
+            .title {
+                p {
+                    width: 60%;
+                }
+            }
+
+            form {
+                width: 100%;
+
+                .field {
+                    width: 98%;
+                }
+            }
+        }
+    }
+    @media(max-width: 991px) {
+        .container {
+            .title {
+                flex-direction: column;
+
+                p {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

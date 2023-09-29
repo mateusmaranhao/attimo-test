@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attimo.</title>
+
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="icon" type="image/png" href="./fav.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="strip">
+            <p>Site em desenvolvimento, novidades em breve</p>
+        </div>
+    </header>
+
+    <section class="s-hero">
+        <div class="container">
+            <img src="./img/logo.png" alt="Logo da Attimo">
+
+            <div class="info">
+                <h1>Sua escolha completa para consultoria, treinamentos e eventos excepcionais</h1>
+                <p>Na Attimo, oferecemos consultoria estratégica, treinamentos especializados e eventos inspiradores para impulsionar o sucesso do seu negócio, transformando desafios em oportunidades de crescimento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-cards">
+        <div class="card">
+            <img src="./img/logo-apoio.svg" alt="Logo Attimo Apoio" class="logo">
+
+            <p class="text">
+                A Attimo Apoio é uma consultoria especializada em certidões e documentação para licitações públicas, promovendo conformidade legal e gestão eficaz de documentos.
+            </p>
+
+            <button class="btn adm js-open-modal-apoio">Saiba mais</button>
+        </div>
+        <div class="card">
+            <img src="./img/logo-gestao.svg" alt="Logo Attimo Gestão" class="logo">
+
+            <p class="text">
+                Nossa empresa especializa-se em simplificar a contratação pública, oferecendo suporte completo, expertise e transparência aos órgãos públicos.
+            </p>
+
+            <button class="btn documentacao js-open-modal-gestao">Saiba mais</button>
+        </div>
+        <div class="card">
+            <img src="./img/logo-formacao.svg" alt="Logo Attimo Formação" class="logo">
+
+            <p class="text">
+                Oferecemos soluções personalizadas em treinamento e desenvolvimento para empresas, visando promover crescimento sustentável e excelência em liderança e colaboração.
+            </p>
+
+            <button class="btn solucoes js-open-modal-formacao">Saiba mais</button>
+        </div>
+        <div class="card">
+            <img src="./img/logo-eventos.svg" alt="Logo Attimo Eventos" class="logo">
+
+            <p class="text">
+                Nossa empresa especializada em eventos empresariais de alto nível oferece experiências únicas e oportunidades de crescimento para empresas de todos os setores.
+            </p>
+
+            <button class="btn eventos js-open-modal-eventos">Saiba mais</button>
+        </div>
+        <div class="card">
+            <img src="./img/logo-poder-publico.svg" alt="Logo Attimo Poder Público" class="logo">
+
+            <p class="text">
+                Oferecemos soluções estratégicas e práticas para impulsionar o sucesso das empresas por meio de análises de mercado e processos internos, garantindo resultados positivos e sustentáveis.
+            </p>
+
+            <button class="btn gerenciamento js-open-modal-publico">Saiba mais</button>
+        </div>
+
+
+        <div class="modal" id="js-apoio">
+            <div class="overlay"></div>
+            <div class="box">
+                <button class="close js-close-modal-apoio">
+                    <img src="./img/close.svg" alt="Ícone de X para fechar o modal">
+                </button>
+                <img src="./img/logo-apoio.svg" alt="Imagem da logo do serviço de Apoio da Attimo" class="logo">
+
+                <p>Somos a Attimo Apoio, uma empresa de consultoria dedicada a fornecer suporte completo para empresas, incluindo a obtenção de certidões e documentos técnicos para licitações públicas. Oferecemos serviços que abrangem regularização fiscal e trabalhista, bem como a elaboração de propostas e planos de trabalho personalizados. Além disso, valorizamos relacionamentos de longo prazo, proporcionando atendimento personalizado e soluções eficazes para impulsionar o crescimento das empresas.</p>
+                <p>Nossa equipe comprometida e ágil trabalha para cumprir prazos e se adaptar às necessidades de cada cliente. Se sua empresa precisa de apoio em certidões, documentos técnicos, organização de arquivos ou outras atividades organizacionais, a Attimo Apoio está pronta para ajudar a otimizar seus processos internos e garantir a conformidade fiscal e legal. Entre em contato conosco e saiba como podemos impulsionar o sucesso do seu negócio.</p>
+
+                <h2 class="apoio">Serviços Oferecidos</h2>
+
+                <ul>
+                    <li>
+                        <img src="./img/check-apoio.svg" alt="ícone para acompanhar a lista">
+                        Obtenção de certidões
+                    </li>
+                    <li>
+                        <img src="./img/check-apoio.svg" alt="ícone para acompanhar a lista">
+                        Elaboração de documentos técnicos
+                    </li>
+                    <li>
+                        <img src="./img/check-apoio.svg" alt="ícone para acompanhar a lista">
+                        Gestão documental
+                    </li>
+                    <li>
+                        <img src="./img/check-apoio.svg" alt="ícone para acompanhar a lista">
+                        Consultoria multidisciplinar
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="js-gestao">
+            <div class="overlay"></div>
+            <div class="box">
+                <button class="close js-close-modal-gestao">
+                    <img src="./img/close.svg" alt="Ícone de X para fechar o modal">
+                </button>
+                <img src="./img/logo-gestao.svg" alt="Imagem da logo do serviço de Gestão da Attimo" class="logo">
+
+                <p>Somos uma equipe experiente de consultores em gestão empresarial, dedicados a acelerar o sucesso das empresas. Utilizando análises de mercado e processos internos, desenvolvemos estratégias personalizadas para melhorar a eficiência operacional, impulsionar o crescimento e garantir resultados positivos. Nossa abordagem é prática e orientada para resultados, focando no desenvolvimento de soluções sustentáveis para o crescimento a longo prazo, sempre em estreita colaboração com nossos clientes.</p>
+                <p>Se busca acelerar o sucesso de sua empresa, entre em contato conosco para saber como nossa expertise em gestão empresarial, análise de mercado e otimização de processos pode ser aplicada às suas necessidades específicas. Estamos prontos para ajudá-lo a alcançar o sucesso empresarial que você almeja.</p>
+
+                <h2 class="gestao">Serviços Oferecidos</h2>
+                <ul>
+                    <li>
+                        <img src="./img/check-gestao.svg" alt="ícone para acompanhar a lista">
+                        Consultoria em gestão de negócios
+                    </li>
+                    <li>
+                        <img src="./img/check-gestao.svg" alt="ícone para acompanhar a lista">
+                        Anáise de mercado
+                    </li>
+                    <li>
+                        <img src="./img/check-gestao.svg" alt="ícone para acompanhar a lista">
+                        Otimização de processos internos
+                    </li>
+                    <li>
+                        <img src="./img/check-gestao.svg" alt="ícone para acompanhar a lista">
+                        Desenvolvimento de soluções personalizadas
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="js-formacao">
+            <div class="overlay"></div>
+            <div class="box">
+                <button class="close js-close-modal-formacao">
+                    <img src="./img/close.svg" alt="Ícone de X para fechar o modal">
+                </button>
+                <img src="./img/logo-formacao.svg" alt="Imagem da logo do serviço de Formação da Attimo" class="logo">
+
+               <p>Somos especializados em oferecer cursos e treinamentos personalizados para empresas, visando o desenvolvimento de líderes e colaboradores. Nossos programas abrangem uma variedade de tópicos, promovendo habilidades técnicas e interpessoais, e enfatizam a importância do networking empresarial.</p>
+               <p>Nossa equipe de especialistas proporciona uma experiência de aprendizado prática e atualizada. Se busca cursos para formar líderes excepcionais e fortalecer relacionamentos empresariais, entre em contato conosco para impulsionar o crescimento de sua empresa.</p>
+
+                <h2 class="formacao">Serviços Oferecidos</h2>
+                <ul>
+                    <li>
+                        <img src="./img/check-formacao.svg" alt="ícone para acompanhar a lista">
+                        Cursos personalizados
+                    </li>
+                    <li>
+                        <img src="./img/check-formacao.svg" alt="ícone para acompanhar a lista">
+                        Formações especializadas
+                    </li>
+                    <li>
+                        <img src="./img/check-formacao.svg" alt="ícone para acompanhar a lista">
+                        Treinamento empresarial
+                    </li>
+                    <li>
+                        <img src="./img/check-formacao.svg" alt="ícone para acompanhar a lista">
+                        Palestras inspiradoras
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="js-eventos">
+            <div class="overlay"></div>
+            <div class="box">
+                <button class="close js-close-modal-eventos">
+                    <img src="./img/close.svg" alt="Ícone de X para fechar o modal">
+                </button>
+                <img src="./img/logo-eventos.svg" alt="Imagem da logo do serviço de Eventos da Attimo" class="logo">
+
+               <p>Nossa empresa é especializada na organização de eventos empresariais de alto nível, promovendo networking e aprendizado entre empresas de diversos setores. Oferecemos experiências enriquecedoras com conteúdo relevante e especialistas renomados.</p>
+               <p>Nossos eventos são planejados para atender às necessidades dos participantes, proporcionando insights e conexões estratégicas. Junte-se a nós para fortalecer seus colaboradores e relacionamentos empresariais em nossos próximos eventos de qualidade.</p>
+
+               <h2>Serviços Oferecidos</h2>
+                <ul>
+                    <li>
+                        <img src="./img/check-eventos.svg" alt="ícone para acompanhar a lista">
+                        Organização eventos empresariais
+                    </li>
+                    <li>
+                        <img src="./img/check-eventos.svg" alt="ícone para acompanhar a lista">
+                        Conteúdo relevante e atualizado
+                    </li>
+                    <li>
+                        <img src="./img/check-eventos.svg" alt="ícone para acompanhar a lista">
+                        Networking estratégicos
+                    </li>
+                    <li>
+                        <img src="./img/check-eventos.svg" alt="ícone para acompanhar a lista">
+                        Planejamento personalizado
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="js-publico">
+            <div class="overlay"></div>
+            <div class="box">
+                <button class="close js-close-modal-publico">
+                    <img src="./img/close.svg" alt="Ícone de X para fechar o modal">
+                </button>
+                <img src="./img/logo-poder-publico.svg" alt="Imagem da logo do serviço de Poder Público da Attimo" class="logo">
+
+               <p>A nossa empresa oferece suporte completo para empresas que buscam contratar com o poder público, incluindo a elaboração de documentos e adaptação de produtos aos requisitos governamentais, fortalecendo relacionamentos e monitorando a execução de contratos para garantir conformidade.</p>
+               <p>Destacamos-nos por fornecer serviços abrangentes de assessoria em contratações públicas, desde a preparação de documentos até a adaptação de produtos, promovendo relacionamentos estratégicos e assegurando a execução transparente dos contratos.</p>
+
+               <h2 class="poder-publico">Serviços Oferecidos</h2>
+                <ul>
+                    <li>
+                        <img src="./img/check-publico.svg" alt="ícone para acompanhar a lista">
+                        Elaboração de documentos
+                    </li>
+                    <li>
+                        <img src="./img/check-publico.svg" alt="ícone para acompanhar a lista">
+                        Adaptação de produtos e serviços
+                    </li>
+                    <li>
+                        <img src="./img/check-publico.svg" alt="ícone para acompanhar a lista">
+                        Relacionamentos estratégicos
+                    </li>
+                    <li>
+                        <img src="./img/check-publico.svg" alt="ícone para acompanhar a lista">
+                        Monitoramento de contratos
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-event">
+        <div class="container">
+            <img src="./img/event.png" alt="Logo Attimo Eventos">
+
+            <div class="details">
+                <div class="info">
+                    <p>Nome do Evento</p>
+                    <h2>Acelera</h2>
+                </div>
+
+                <div class="info">
+                    <p>Endereço do Evento</p>
+                    <h3>R. Honório de Almeidad Barros, 499 - Campo Largo, Salto de Pirapora/SP, 18160-000</h3>
+                </div>
+
+                <div class="info">
+                    <p>Data do Evento</p>
+                    <h3>05 e 06/10</h3>
+                </div>
+
+                <div class="info">
+                    <p>Horário do Evento</p>
+                    <h3>18h30 às 22h</h3>
+                </div>
+            </div>
+
+            <div class="qr-code">
+                <img src="./img/qr-code.svg" alt="QR-Code para escanear e ser redirecionado para o whastapp da empresa">
+
+                <p>
+                    Garanta sua vaga escaneando o QR Code ou  clicando <a href="https://api.whatsapp.com/send?phone=5515996058558&text=Olá,%20gostaria%20de%20me%20inscrever%20no%20evento%20ACELERA!" target="_blank">aqui</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-contact">
+        <div class="container">
+            <div class="title">
+                <h2>Contato</h2>
+                <p>
+                    Pronto para impulsionar o sucesso de sua empresa? Entre em contato conosco agora mesmo!
+                </p>
+            </div>
+
+            <form action="https://formsubmit.co/mateusmaranhao0210@gmail.com" method="POST">
+                <div class="field" data-aos="fade-down">
+                    <label for="name">Seu nome <span class="accent">*</span></label>
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="field" data-aos="fade-down">
+                    <label for="company">Sua empresa <span class="accent">*</span></label>
+                    <input type="text" name="company" placeholder="Digite o nome da sua empresa" required>
+                </div>
+
+                <div class="field" data-aos="fade-down">
+                    <label for="email">Seu e-mail <span class="accent">*</span></label>
+                    <input type="text" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="field" data-aos="fade-down">
+                    <label for="message">Serviço desejado<span class="accent">*</span></label>
+                    <textarea name="message" placeholder="Nos conte qual serviço disponibilizado pela Attimo que sua empresa precisa" required></textarea>
+                </div>
+
+                <input type="hidden" name="_captcha" value="false">
+                
+                <button type="submit" class="form-btn" data-aos="fade-up">Enviar</button>
+           </form>
+        </div>
+
+        <footer>
+            <p>Copyright © 2022. ATTIMO. Todos direitos reservados.</p>
+        </footer>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

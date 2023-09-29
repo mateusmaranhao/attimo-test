@@ -1,0 +1,18 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    
+    .strip {
+        background-color: $grey-200;
+        p {
+            padding: 2rem 0;
+            font-weight: 700;
+            color: $ascent;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.126rem;
+        }
+    }
+}

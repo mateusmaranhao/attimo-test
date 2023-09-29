@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'HKGrotesk';
+    src: url('../fonts/WEB/HKGrotesk-ExtraBold.woff') format(woff);
+    src: url('../fonts/WEB/HKGrotesk-ExtraBold.woff2') format(woff2);
+
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HKGrotesk';
+    src: url('../fonts/WEB/HKGrotesk-Medium.woff') format(woff);
+    src: url('../fonts/WEB/HKGrotesk-Medium.woff2') format(woff2);
+
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'HKGrotesk', sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    color: $ascent;
+    @media(max-width: 1200px) {
+        font-size: 3.2rem;
+    }
+
+    @media(max-width: 991px) {
+        font-size: 2.8rem;
+    }
+
+    @media(max-width: 600px) {}
+
+    @media(max-width: 480px) {}
+ }
+h2 {
+    font-family: 'HKGrotesk', sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    color: $ascent;
+}
+h3 {
+    font-family: 'HKGrotesk', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    color: $white-100;
+
+    @media(max-width: 991px) {
+        font-size: 1.6rem;
+    }
+
+    @media(max-width: 600px) {}
+
+    @media(max-width: 480px) {}
+}
